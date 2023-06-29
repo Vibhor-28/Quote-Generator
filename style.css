@@ -1,0 +1,183 @@
+body {
+    background-color: blueviolet;
+}
+
+.container-fluid {
+    background-color: brown;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.fa-copy {
+    font-size: large;
+    margin-right: 10px;
+}
+
+i {
+    font-size: 3rem;
+
+}
+
+.fa-quote-left {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.fa-quote-right {
+    position: absolute;
+    right: 80px;
+    bottom: 150px;
+}
+
+.wrapper {
+
+    padding: 15% 20%;
+
+
+
+}
+
+.newquote {
+    width: 100%;
+    display: block;
+    border-radius: 0 0 8px 8px;
+    border-style: none;
+    height: 40px;
+    font-weight: bolder;
+    font-size: large;
+
+
+}
+
+.quote {
+    color: white;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
+}
+
+.author {
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Nerko One', cursive;
+}
+
+.copy {
+
+    position: absolute;
+    font-weight: 600;
+    font-size: large;
+    right: 0;
+    border-radius: 0 5px 0 5px;
+    border: none;
+    padding-bottom: 8px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 10vh
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+@media  (max-width: 973px) {
+     .container-fluid{
+        margin-top: 20vh;
+    }
+  }
+
+
+  @media  (max-width: 778px) {
+    .container-fluid{
+       min-width: 70%;
+       
+   }
+   .title
+   {
+    font-size: 2.5rem;
+   }
+ }  
